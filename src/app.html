@@ -1,0 +1,16 @@
+<template>
+	<div class="slds-card">
+		<h1> Nome e Sobrenome todo Maiúsculo LWC </h1>
+
+    <lightning-input type="text" label="nome" onchange={mudaNome}></lightning-input>
+		<lightning-input type="text" label="sobrenome" onchange={mudaSobrenome}></lightning-input>
+		<br/>
+		
+		<lightning-button variant="brand-outline" label="Mudar"  onclick={nomeESobrenomeMaiusculo} class="slds-m-left_x-small">
+		</lightning-button> 
+    <br/>            
+    
+		<span id="sobrenomeCaixaAlta">====>>>> {nomeM} {sobrenomeM} </span> 
+		<br/>   
+	</div>
+</template>
